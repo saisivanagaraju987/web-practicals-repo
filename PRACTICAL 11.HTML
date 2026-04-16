@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BARATH DHSRSHAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100"> 
+
+    
+
+<!-- Navigation Bar -->
+<nav class="bg-orange-500 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Website Name -->
+    <a href="#" class="text-white text-2xl font-bold">BARATH DHSRSHAN</a>
+
+    <!-- Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-white hover:text-gray-200">Home</a>
+      <a href="#" class="text-white hover:text-gray-200">About</a>
+      <a href="#" class="text-white hover:text-gray-200">Contact</a>
+
+      <!-- Dropdown -->
+      <div class="relative group">
+        <button class="text-white hover:text-gray-200 focus:outline-none">
+          Services ▼
+        </button>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded">
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Web Development</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">App Development</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">UI/UX Design</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2">
+    <a href="#" class="block text-white">Home</a>
+    <a href="#" class="block text-white">About</a>
+    <a href="#" class="block text-white">Contact</a>
+   
+  </div>
+</nav>
+
+  
+
+<script>
+  // Toggle mobile menu
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
+
