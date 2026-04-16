@@ -1,0 +1,53 @@
+body {
+font-family: Arial, sans-serif;
+margin: 40px;
+background-color: #f4f4f4;
+}
+
+.container {
+background: white;
+padding: 20px;
+border-radius: 10px;
+max-width: 700px;
+margin: auto;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+text-align: center;
+}
+
+h3, h4 {
+text-align: center;
+margin: 5px 0;
+}
+
+01CC0402–Web Development Technology –Lab#3
+
+FACULTY OF ENGINEERING AND TECHNOLOGY
+Department of Computer Science Engineering &
+Cyber Security
+
+.portrait {
+text-align: center;
+margin: 20px 0;
+}
+
+.portrait img {
+width: 250px;
+height: 320px; /* taller than width to make oval */
+border-radius: 50%; /* makes it oval */
+object-fit: cover; /* ensures image fits nicely */
+display: block;
+margin: 0 auto;
+}
+
+.caption {
+text-align: center;
+font-style: italic;
+margin-top: 5px;
+}
+
+ul {
+line-height: 1.8;
+}
